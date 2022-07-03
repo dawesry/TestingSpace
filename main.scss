@@ -75,6 +75,11 @@ $home-font: 'Montserrat', sans-serif;
     content: url("assets/img/twitter.png");
     height: 2rem;
   }
+
+  &#bulma {
+    content: url("https://bulma.io/images/made-with-bulma.png");
+    height: 2.5rem;
+  }
 }
 
 #badge {

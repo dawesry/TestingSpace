@@ -43,6 +43,10 @@
   content: url("assets/img/twitter.png");
   height: 2rem;
 }
+.social-button#bulma {
+  content: url("https://bulma.io/images/made-with-bulma.png");
+  height: 2.5rem;
+}
 
 #badge {
   margin: 0.25em;
