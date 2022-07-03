@@ -1,127 +1,105 @@
-@import "https://fonts.googleapis.com/css?family=Poppins";
+/* IMPORTS */
 
-$primary-color: rgb(231, 71, 31);
-$home-font: "Poppins";
+@import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
 
-body {
-  background-image: url(assets/img/bg.jpg);
-  background-size: cover;
-  background-color: black;
+/* CUSTOM VARIABLES */
+
+$primary: hsl(190, 100%, 50%);
+
+$header-bg: hsl(0, 0%, 50%);
+$header-text: hsl(0, 0%, 100%);
+
+$body-bg: hsl(0, 0%, 75%);
+$body-text: hsl(0, 0, 0%);
+
+$footer-bg: hsl(0, 0%, 0%);
+$footer-text: hsl(0, 0%, 100%);
+
+
+$dark-bg: hsl(0, 0%, 0%);
+$dark-text: hsl(0, 0%, 100%);
+
+$light-bg: hsl(0, 0%, 95%);
+$light-text: hsl(0, 0%, 0%);
+
+$home-font: 'Montserrat', sans-serif;
+
+
+/* CONTENT STYLING */
+
+.hero {
+  &.is-light-bg {
+    background-color: $light-bg;
+    color: #fff;
+  }
+  .hero-body {
+    color: $light-text;
+  }
 }
 
-.page-container {
-  position: relative;
-  min-height: 95vh;
-  font-family: $home-font;
-  color: #fff;
+
+.tag:not(body) {
+  &.is-docker {
+    background-color: #2496ED; 
+    color: #fff;
+  }
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3rem;
-  margin: auto;
+.tile:not(.is-child) {
+  justify-content: center;
 }
 
-#footer {
-  text-align: center;
-  color: #fff;
+/* CUSTOM ELEMENTS */
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#social {
+.social-button {
   margin: 0 auto;
-  padding: .5rem;
+  padding: 0.5rem;
   opacity: 80%;
-}
 
-#social:hover {
-  transform: scale(1.1);
-  opacity: 100%;
-}
-
-#box {
-  background: rgba(0, 0, 0, 0.55);
-  width: 75%;
-  aspect-ratio: 1/.75;
-  max-height: 75%;
-  position: absolute;
-  inset: 0rem;
-  margin: auto;
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  padding: 1em;
-}
-
-@media only screen and (max-width: 650px) {
-  #box {
-    height: 95%;
-    aspect-ratio: 1/1.5;
+  &:hover {
+    transform: scale(1.1);
+    opacity: 100%;
   }
-}
 
-#box:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(25px);
-}
-
-#box-content {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  width: 95%;
-  max-height: 100%;
-  margin: auto;
-  overflow: auto;
-}
-
-#box-title {
-  grid-column: 1 / 5;
-  grid-row: 1;
-  font-weight: 900;
-  font-size: x-large;
-}
-
-#box-img {
-  grid-column: 1;
-  grid-row: 2 / 5;
-  width: 100%;
-  max-height: 100%; 
-}
-
-#text-box {
-  grid-column: 2 / 4;
-  grid-row: 2 / 5;
-  color: white;
-  font-weight: 900;
-  margin: 1rem;
-  text-align: justify;
-}
-
-@media only screen and (max-width: 650px) {
-  #box-img {
-    grid-column: 4;
-    grid-row: auto / 2;
-    z-index: -1;
-    height: 100%;
-    max-width: 100%;
+  &#github {
+    content: url("assets/img/github.png");
+    height: 2rem;
   }
-  
-  #text-box {
-    grid-column: 1 / 5;
+
+  &#twitter {
+    content: url("assets/img/twitter.png");
+    height: 2rem;
   }
 }
 
 #badge {
   margin: 0.25em;
   padding: 0.35rem;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+
+  &.docker {
+    content: url("//img.shields.io/badge/docker-white?style=for-the-badge&logo=docker&logoColor=2496ED");
+  }
 }
 
-#badge:hover {
-  transform: scale(1.1);
+#porpo-docker {
+  content: url("assets/img/porpo-docker.png");
+  width: 50%;
+}
+
+/* MEDIA QUERIES */
+/* DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+}
+
+/* LIGHT MODE */
+
+@media (prefers-color-scheme: light) {
 }
