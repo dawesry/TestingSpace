@@ -1,0 +1,49 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
+.socials {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.social-button {
+  opacity: .8;
+  margin: 0 auto;
+  padding: .5rem;
+}
+
+.social-button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.social-button#github {
+  content: url("github.5cc79b1b.png");
+  height: 2rem;
+}
+
+.social-button#twitter {
+  content: url("twitter.a11dcc2c.png");
+  height: 2rem;
+}
+
+.social-button#bulma {
+  content: url("https://bulma.io/images/made-with-bulma.png");
+  height: 2.5rem;
+}
+
+#badge {
+  max-width: 90%;
+  height: auto;
+  margin: .25em;
+  padding: .35rem;
+}
+
+#badge.docker {
+  content: url("//img.shields.io/badge/docker-white?style=for-the-badge&logo=docker&logoColor=2496ED");
+}
+
+#badge.python {
+  content: url("//img.shields.io/badge/python-white?style=for-the-badge&logo=python&logoColor=3776AB");
+}
+
+/*# sourceMappingURL=index.2103b895.css.map */
