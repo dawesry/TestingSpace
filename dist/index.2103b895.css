@@ -27,22 +27,24 @@
 }
 
 .social-button#bulma {
-  content: url("https://bulma.io/images/made-with-bulma.png");
   height: 2.5rem;
+  content: url("https://bulma.io/images/made-with-bulma--semiblack.png");
 }
 
-#badge {
+@media (prefers-color-scheme: dark) {
+  .social-button#bulma {
+    content: url("https://bulma.io/images/made-with-bulma--semiwhite.png");
+  }
+}
+
+.badge {
   max-width: 90%;
   height: auto;
   margin: .25em;
   padding: .35rem;
 }
 
-#badge.docker {
-  content: url("//img.shields.io/badge/docker-white?style=for-the-badge&logo=docker&logoColor=2496ED");
-}
-
-#badge.python {
+.badge#python {
   content: url("//img.shields.io/badge/python-white?style=for-the-badge&logo=python&logoColor=3776AB");
 }
 
