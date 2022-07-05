@@ -1,29 +1,57 @@
-@charset "utf-8";
-
-// Customization
-
-// You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
-
-/*
-// 1. Import the initial variables
-@import "../node_modules/bulma/sass/utilities/initial-variables";
-
-// 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
-// Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
-
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
-
-// 4. Import the rest of Bulma
-*/
-
 @import "../node_modules/bulma/bulma";
+@import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
+
+/* CUSTOM VARIABLES */
+
+
+/* CONTENT STYLING */
+
+
+/* CUSTOM ELEMENTS */
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-button {
+  margin: 0 auto;
+  padding: 0.5rem;
+  opacity: 80%;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+  }
+
+  &#github {
+    content: url("github.png");
+    height: 2rem;
+  }
+
+  &#twitter {
+    content: url("assets/img/twitter.png");
+    height: 2rem;
+  }
+
+  &#bulma {
+    height: 2.5rem;
+    content: url("https://bulma.io/images/made-with-bulma--semiblack.png");
+
+    @media (prefers-color-scheme: dark) {
+      content: url("https://bulma.io/images/made-with-bulma--semiwhite.png");
+    };
+  }
+}
+
+.badge {
+  margin: 0.25em;
+  padding: 0.35rem;
+  max-width: 90%;
+  height: auto;
+  
+  &#python {
+    content: url("//img.shields.io/badge/python-white?style=for-the-badge&logo=python&logoColor=3776AB");
+  }
+}

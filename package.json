@@ -9,7 +9,9 @@
     "bulma": "^0.9.3",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^9.1.0",
-    "sass": "^1.51.0"
+    "sass": "^1.51.0",
+    "gh-pages": "latest",
+    "typescript": "latest"
   },
   "scripts": {
     "css-deploy": "npm run css-build && npm run css-postcss",
@@ -19,6 +21,10 @@
     "deploy": "npm run css-deploy && npm run js-build",
     "js-build": "babel _javascript --out-dir lib",
     "js-watch": "npm run js-build -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch"
+    "start": "npm-run-all --parallel css-watch js-watch",
+    "pages": "pages -d"
+  },
+  "dependencies": {
+    "npm": "^8.13.2"
   }
 }
