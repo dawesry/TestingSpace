@@ -4,7 +4,8 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "push-pages": "push-dir --dir=dist --branch=pages --cleanup --verbose"
+    "predeploy": "rm -rf dist && parcel build --public-url testing.dawes.cc && cp CNAME ./dist",
+    "deploy": "pages -d dist"
   },
   "dependencies": {
     "@babel/core": "latest",
@@ -15,6 +16,7 @@
     "@parcel/transformer-sass": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "gh-pages": "^4.0.0",
     "parcel": "latest",
     "react": "latest",
     "react-dom": "latest",

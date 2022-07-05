@@ -24,7 +24,6 @@ export default function TransitionAlerts() {
               <CloseIcon fontSize="inherit" />
             </IconButton>
           }
-          sx={{ mb: 2 }}
         >
           Close me!
         </Alert>

@@ -46704,9 +46704,6 @@ function TransitionAlerts() {
         }, /*#__PURE__*/ _react.createElement((0, _closeDefault.default), {
             fontSize: "inherit"
         })),
-        sx: {
-            mb: 2
-        },
         __source: {
             fileName: "src/alert.tsx",
             lineNumber: 14,
