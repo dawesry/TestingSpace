@@ -22,7 +22,6 @@
     "copy": "rm -rf dist && mkdir dist && cp CNAME *.html ./dist && cp -r css/ lib/ assets/ ./dist",
     "pages": "gh-pages -d ./dist",
     "deploy": "npm-run-all --sequential build copy pages"
-    
   },
   "devDependencies": {
     "npm": "^8.13.2"
