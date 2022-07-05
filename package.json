@@ -1,31 +1,23 @@
 {
   "name": "testingspace",
   "author": "Ryan Dawes",
-  "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015-ie": "^6.7.0",
-    "bulma": "^0.9.3",
+  "dependencies": {
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-typescript": "latest",
     "gh-pages": "^4.0.0",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^9.1.0",
-    "sass": "^1.51.0",
+    "sass": "latest",
     "typescript": "latest"
   },
   "scripts": {
-    "css-deploy": "npm run css-build && npm run css-postcss",
-    "css-build": "sass --no-source-map _sass/main.scss:css/main.css",
-    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
-    "css-watch": "npm run css-build -- --watch",
-    "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel _javascript --out-dir lib",
-    "js-watch": "npm run js-build -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch",
+    "css-build": "sass --no-source-map _sass/style.scss css/style.css",
+    "js-build": "babel --extensions '.tsx' _javascript --out-dir lib",
+    "build": "npm-run-all --parallel css-build js-build",
     "pages": "gh-pages -d ."
   },
-  "dependencies": {
-    "bulma-start": "^0.0.5",
+  "devDependencies": {
+    
     "npm": "^8.13.2"
   }
 }
