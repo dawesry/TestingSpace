@@ -11,11 +11,18 @@
     "typescript": "latest"
   },
   "scripts": {
-    "css-build": "sass --no-source-map _sass/style.scss css/style.css",
-    "js-build": "babel --extensions '.tsx' _javascript --out-dir lib",
+    "css-watch":"sass --watch --no-source-map _sass/:css/",
+    "js-watch": "babel  --extensions '.tsx' _javascript --watch --out-file lib/main.js",
+    "dev":"npm-run-all --parallel css-watch js-watch",
+
+    "css-build": "sass --no-source-map _sass/:css/",
+    "js-build": "babel --extensions '.tsx' _javascript --out-file lib/main.js",
     "build": "npm-run-all --parallel css-build js-build",
-    "copy": "rm -rf dist && mkdir dist && cp CNAME css/style.css lib/main.js *.html ./dist && cp -r assets/ ./dist",
-    "pages": "gh-pages -d ./dist"
+
+    "copy": "rm -rf dist && mkdir dist && cp CNAME *.html ./dist && cp -r css/ lib/ assets/ ./dist",
+    "pages": "gh-pages -d ./dist",
+    "deploy": "npm-run-all --sequential build copy pages"
+    
   },
   "devDependencies": {
     "npm": "^8.13.2"
