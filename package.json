@@ -3,7 +3,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "push-pages": "push-dir --dir=dist --branch=pages --cleanup --verbose"
   },
   "dependencies": {
     "@babel/core": "latest",
