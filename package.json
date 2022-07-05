@@ -14,10 +14,10 @@
     "css-build": "sass --no-source-map _sass/style.scss css/style.css",
     "js-build": "babel --extensions '.tsx' _javascript --out-dir lib",
     "build": "npm-run-all --parallel css-build js-build",
-    "pages": "gh-pages -d ."
+    "copy": "rm -rf dist && mkdir dist && cp CNAME css/style.css lib/main.js *.html ./dist && cp -r assets/ ./dist",
+    "pages": "gh-pages -d ./dist"
   },
   "devDependencies": {
-    
     "npm": "^8.13.2"
   }
 }
