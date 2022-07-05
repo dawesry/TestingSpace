@@ -15,8 +15,8 @@
   },
   "scripts": {
     "css-deploy": "npm run css-build && npm run css-postcss",
-    "css-build": "sass --no-source-map _sass/main.scss:css/main.css",
-    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
+    "css-build": "sass --no-source-map _sass/main.scss:css/main.css && sass --no-source-map _sass/style.scss:css/style.css",
+    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css && postcss --use autoprefixer --output css/style.css css/style.css",
     "css-watch": "npm run css-build -- --watch",
     "deploy": "npm run css-deploy && npm run js-build",
     "js-build": "babel _javascript --out-dir lib",
