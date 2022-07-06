@@ -1,6 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-const App = () => {
-  return <h1>Hello Wepack!</h1>;
-};
-ReactDOM.render(<App />, document.getElementById('alert'));
+import * as React from 'react';
+import ReactDOM from 'react-dom/client';
+import { StyledEngineProvider } from '@mui/material/styles';
+import BasicAlerts from './alert';
+
+ReactDOM.createRoot(document.querySelector("#alert")).render(
+  <React.StrictMode>
+    <StyledEngineProvider injectFirst>
+      <BasicAlerts />
+    </StyledEngineProvider>
+  </React.StrictMode>
+);
