@@ -2,6 +2,8 @@
 
 @use 'components/imports';
 
+@import '../../node_modules/bulma/bulma.sass';
+
 .socials {
   display: flex;
   justify-content: center;
@@ -45,6 +47,6 @@
   height: auto;
   
   &#python {
-    content: url("//img.shields.io/badge/python-white?style=for-the-badge&logo=python&logoColor=3776AB");
+    content: url("https://img.shields.io/badge/python-white?style=for-the-badge&logo=python&logoColor=3776AB");
   }
 }
