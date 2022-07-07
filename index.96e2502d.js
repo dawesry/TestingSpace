@@ -47378,12 +47378,6 @@ var _alert = require("@mui/material/Alert");
 var _alertDefault = parcelHelpers.interopDefault(_alert);
 var _flag = require("@mui/icons-material/Flag");
 var _flagDefault = parcelHelpers.interopDefault(_flag);
-var _collapse = require("@mui/material/Collapse");
-var _collapseDefault = parcelHelpers.interopDefault(_collapse);
-var _close = require("@mui/icons-material/Close");
-var _closeDefault = parcelHelpers.interopDefault(_close);
-var _iconButton = require("@mui/material/IconButton");
-var _iconButtonDefault = parcelHelpers.interopDefault(_iconButton);
 var _s = $RefreshSig$();
 function BasicAlerts() {
     _s();
@@ -47392,48 +47386,30 @@ function BasicAlerts() {
         sx: {
             width: "100%"
         },
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _collapseDefault.default), {
-            in: open,
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _alertDefault.default), {
-                icon: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _flagDefault.default), {
-                    fontSize: "inherit"
-                }, void 0, false, void 0, void 0),
-                severity: "info",
-                action: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _iconButtonDefault.default), {
-                    "aria-label": "close",
-                    color: "info",
-                    size: "small",
-                    onClick: ()=>{
-                        setOpen(false);
-                    },
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _closeDefault.default), {
-                        fontSize: "inherit"
-                    }, void 0, false, void 0, void 0)
-                }, void 0, false, void 0, void 0),
-                children: [
-                    "Porpo for Docker is ",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                        children: "being built."
-                    }, void 0, false, {
-                        fileName: "src/_typescript/alert.tsx",
-                        lineNumber: 29,
-                        columnNumber: 31
-                    }, this),
-                    " Expect exciting changes soon!"
-                ]
-            }, void 0, true, {
-                fileName: "src/_typescript/alert.tsx",
-                lineNumber: 15,
-                columnNumber: 9
-            }, this)
-        }, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _alertDefault.default), {
+            icon: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _flagDefault.default), {
+                fontSize: "inherit"
+            }, void 0, false, void 0, void 0),
+            severity: "warning",
+            children: [
+                "TestingSpace is a ",
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                    children: "development environment."
+                }, void 0, false, {
+                    fileName: "src/_typescript/alert.tsx",
+                    lineNumber: 12,
+                    columnNumber: 29
+                }, this),
+                " Expect broken things!"
+            ]
+        }, void 0, true, {
             fileName: "src/_typescript/alert.tsx",
-            lineNumber: 14,
-            columnNumber: 7
+            lineNumber: 11,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "src/_typescript/alert.tsx",
-        lineNumber: 13,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 }
@@ -47448,7 +47424,7 @@ $RefreshReg$(_c, "BasicAlerts");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@mui/material/Box":"eQD0H","@mui/material/Alert":"bJH0A","@mui/icons-material/Flag":"gvgie","@mui/material/Collapse":"lGzFX","@mui/icons-material/Close":"2z2cd","@mui/material/IconButton":"38BrD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eQD0H":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@mui/material/Box":"eQD0H","@mui/material/Alert":"bJH0A","@mui/icons-material/Flag":"gvgie","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eQD0H":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>(0, _boxDefault.default));
@@ -50420,430 +50396,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _utils = require("@mui/utils");
 exports.default = (0, _utils.unstable_useControlled);
 
-},{"@mui/utils":"cttLn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lGzFX":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>(0, _collapseDefault.default));
-parcelHelpers.export(exports, "collapseClasses", ()=>(0, _collapseClassesDefault.default));
-var _collapse = require("./Collapse");
-var _collapseDefault = parcelHelpers.interopDefault(_collapse);
-var _collapseClasses = require("./collapseClasses");
-var _collapseClassesDefault = parcelHelpers.interopDefault(_collapseClasses);
-parcelHelpers.exportAll(_collapseClasses, exports);
-
-},{"./Collapse":"6SQTK","./collapseClasses":"kwDvU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6SQTK":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _objectWithoutPropertiesLoose = require("@babel/runtime/helpers/esm/objectWithoutPropertiesLoose");
-var _objectWithoutPropertiesLooseDefault = parcelHelpers.interopDefault(_objectWithoutPropertiesLoose);
-var _extends = require("@babel/runtime/helpers/esm/extends");
-var _extendsDefault = parcelHelpers.interopDefault(_extends);
-var _react = require("react");
-var _clsx = require("clsx");
-var _clsxDefault = parcelHelpers.interopDefault(_clsx);
-var _propTypes = require("prop-types");
-var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-var _reactTransitionGroup = require("react-transition-group");
-var _utils = require("@mui/utils");
-var _base = require("@mui/base");
-var _styled = require("../styles/styled");
-var _styledDefault = parcelHelpers.interopDefault(_styled);
-var _useThemeProps = require("../styles/useThemeProps");
-var _useThemePropsDefault = parcelHelpers.interopDefault(_useThemeProps);
-var _createTransitions = require("../styles/createTransitions");
-var _utils1 = require("../transitions/utils");
-var _useTheme = require("../styles/useTheme");
-var _useThemeDefault = parcelHelpers.interopDefault(_useTheme);
-var _utils2 = require("../utils");
-var _collapseClasses = require("./collapseClasses");
-var _jsxRuntime = require("react/jsx-runtime");
-const _excluded = [
-    "addEndListener",
-    "children",
-    "className",
-    "collapsedSize",
-    "component",
-    "easing",
-    "in",
-    "onEnter",
-    "onEntered",
-    "onEntering",
-    "onExit",
-    "onExited",
-    "onExiting",
-    "orientation",
-    "style",
-    "timeout",
-    "TransitionComponent"
-];
-const useUtilityClasses = (ownerState)=>{
-    const { orientation , classes  } = ownerState;
-    const slots = {
-        root: [
-            "root",
-            `${orientation}`
-        ],
-        entered: [
-            "entered"
-        ],
-        hidden: [
-            "hidden"
-        ],
-        wrapper: [
-            "wrapper",
-            `${orientation}`
-        ],
-        wrapperInner: [
-            "wrapperInner",
-            `${orientation}`
-        ]
-    };
-    return (0, _base.unstable_composeClasses)(slots, (0, _collapseClasses.getCollapseUtilityClass), classes);
-};
-const CollapseRoot = (0, _styledDefault.default)("div", {
-    name: "MuiCollapse",
-    slot: "Root",
-    overridesResolver: (props, styles)=>{
-        const { ownerState  } = props;
-        return [
-            styles.root,
-            styles[ownerState.orientation],
-            ownerState.state === "entered" && styles.entered,
-            ownerState.state === "exited" && !ownerState.in && ownerState.collapsedSize === "0px" && styles.hidden
-        ];
-    }
-})(({ theme , ownerState  })=>(0, _extendsDefault.default)({
-        height: 0,
-        overflow: "hidden",
-        transition: theme.transitions.create("height")
-    }, ownerState.orientation === "horizontal" && {
-        height: "auto",
-        width: 0,
-        transition: theme.transitions.create("width")
-    }, ownerState.state === "entered" && (0, _extendsDefault.default)({
-        height: "auto",
-        overflow: "visible"
-    }, ownerState.orientation === "horizontal" && {
-        width: "auto"
-    }), ownerState.state === "exited" && !ownerState.in && ownerState.collapsedSize === "0px" && {
-        visibility: "hidden"
-    }));
-const CollapseWrapper = (0, _styledDefault.default)("div", {
-    name: "MuiCollapse",
-    slot: "Wrapper",
-    overridesResolver: (props, styles)=>styles.wrapper
-})(({ ownerState  })=>(0, _extendsDefault.default)({
-        // Hack to get children with a negative margin to not falsify the height computation.
-        display: "flex",
-        width: "100%"
-    }, ownerState.orientation === "horizontal" && {
-        width: "auto",
-        height: "100%"
-    }));
-const CollapseWrapperInner = (0, _styledDefault.default)("div", {
-    name: "MuiCollapse",
-    slot: "WrapperInner",
-    overridesResolver: (props, styles)=>styles.wrapperInner
-})(({ ownerState  })=>(0, _extendsDefault.default)({
-        width: "100%"
-    }, ownerState.orientation === "horizontal" && {
-        width: "auto",
-        height: "100%"
-    }));
-/**
- * The Collapse transition is used by the
- * [Vertical Stepper](/material-ui/react-stepper/#vertical-stepper) StepContent component.
- * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
- */ const Collapse = /*#__PURE__*/ _react.forwardRef(function Collapse(inProps, ref) {
-    const props = (0, _useThemePropsDefault.default)({
-        props: inProps,
-        name: "MuiCollapse"
-    });
-    const { addEndListener , children , className , collapsedSize: collapsedSizeProp = "0px" , component , easing , in: inProp , onEnter , onEntered , onEntering , onExit , onExited , onExiting , orientation ="vertical" , style , timeout =(0, _createTransitions.duration).standard , // eslint-disable-next-line react/prop-types
-    TransitionComponent =(0, _reactTransitionGroup.Transition)  } = props, other = (0, _objectWithoutPropertiesLooseDefault.default)(props, _excluded);
-    const ownerState = (0, _extendsDefault.default)({}, props, {
-        orientation,
-        collapsedSize: collapsedSizeProp
-    });
-    const classes = useUtilityClasses(ownerState);
-    const theme = (0, _useThemeDefault.default)();
-    const timer = _react.useRef();
-    const wrapperRef = _react.useRef(null);
-    const autoTransitionDuration = _react.useRef();
-    const collapsedSize = typeof collapsedSizeProp === "number" ? `${collapsedSizeProp}px` : collapsedSizeProp;
-    const isHorizontal = orientation === "horizontal";
-    const size = isHorizontal ? "width" : "height";
-    _react.useEffect(()=>{
-        return ()=>{
-            clearTimeout(timer.current);
-        };
-    }, []);
-    const nodeRef = _react.useRef(null);
-    const handleRef = (0, _utils2.useForkRef)(ref, nodeRef);
-    const normalizedTransitionCallback = (callback)=>(maybeIsAppearing)=>{
-            if (callback) {
-                const node = nodeRef.current; // onEnterXxx and onExitXxx callbacks have a different arguments.length value.
-                if (maybeIsAppearing === undefined) callback(node);
-                else callback(node, maybeIsAppearing);
-            }
-        };
-    const getWrapperSize = ()=>wrapperRef.current ? wrapperRef.current[isHorizontal ? "clientWidth" : "clientHeight"] : 0;
-    const handleEnter = normalizedTransitionCallback((node, isAppearing)=>{
-        if (wrapperRef.current && isHorizontal) // Set absolute position to get the size of collapsed content
-        wrapperRef.current.style.position = "absolute";
-        node.style[size] = collapsedSize;
-        if (onEnter) onEnter(node, isAppearing);
-    });
-    const handleEntering = normalizedTransitionCallback((node, isAppearing)=>{
-        const wrapperSize = getWrapperSize();
-        if (wrapperRef.current && isHorizontal) // After the size is read reset the position back to default
-        wrapperRef.current.style.position = "";
-        const { duration: transitionDuration , easing: transitionTimingFunction  } = (0, _utils1.getTransitionProps)({
-            style,
-            timeout,
-            easing
-        }, {
-            mode: "enter"
-        });
-        if (timeout === "auto") {
-            const duration2 = theme.transitions.getAutoHeightDuration(wrapperSize);
-            node.style.transitionDuration = `${duration2}ms`;
-            autoTransitionDuration.current = duration2;
-        } else node.style.transitionDuration = typeof transitionDuration === "string" ? transitionDuration : `${transitionDuration}ms`;
-        node.style[size] = `${wrapperSize}px`;
-        node.style.transitionTimingFunction = transitionTimingFunction;
-        if (onEntering) onEntering(node, isAppearing);
-    });
-    const handleEntered = normalizedTransitionCallback((node, isAppearing)=>{
-        node.style[size] = "auto";
-        if (onEntered) onEntered(node, isAppearing);
-    });
-    const handleExit = normalizedTransitionCallback((node)=>{
-        node.style[size] = `${getWrapperSize()}px`;
-        if (onExit) onExit(node);
-    });
-    const handleExited = normalizedTransitionCallback(onExited);
-    const handleExiting = normalizedTransitionCallback((node)=>{
-        const wrapperSize = getWrapperSize();
-        const { duration: transitionDuration , easing: transitionTimingFunction  } = (0, _utils1.getTransitionProps)({
-            style,
-            timeout,
-            easing
-        }, {
-            mode: "exit"
-        });
-        if (timeout === "auto") {
-            // TODO: rename getAutoHeightDuration to something more generic (width support)
-            // Actually it just calculates animation duration based on size
-            const duration2 = theme.transitions.getAutoHeightDuration(wrapperSize);
-            node.style.transitionDuration = `${duration2}ms`;
-            autoTransitionDuration.current = duration2;
-        } else node.style.transitionDuration = typeof transitionDuration === "string" ? transitionDuration : `${transitionDuration}ms`;
-        node.style[size] = collapsedSize;
-        node.style.transitionTimingFunction = transitionTimingFunction;
-        if (onExiting) onExiting(node);
-    });
-    const handleAddEndListener = (next)=>{
-        if (timeout === "auto") timer.current = setTimeout(next, autoTransitionDuration.current || 0);
-        if (addEndListener) // Old call signature before `react-transition-group` implemented `nodeRef`
-        addEndListener(nodeRef.current, next);
-    };
-    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(TransitionComponent, (0, _extendsDefault.default)({
-        in: inProp,
-        onEnter: handleEnter,
-        onEntered: handleEntered,
-        onEntering: handleEntering,
-        onExit: handleExit,
-        onExited: handleExited,
-        onExiting: handleExiting,
-        addEndListener: handleAddEndListener,
-        nodeRef: nodeRef,
-        timeout: timeout === "auto" ? null : timeout
-    }, other, {
-        children: (state, childProps)=>/*#__PURE__*/ (0, _jsxRuntime.jsx)(CollapseRoot, (0, _extendsDefault.default)({
-                as: component,
-                className: (0, _clsxDefault.default)(classes.root, className, {
-                    "entered": classes.entered,
-                    "exited": !inProp && collapsedSize === "0px" && classes.hidden
-                }[state]),
-                style: (0, _extendsDefault.default)({
-                    [isHorizontal ? "minWidth" : "minHeight"]: collapsedSize
-                }, style),
-                ownerState: (0, _extendsDefault.default)({}, ownerState, {
-                    state
-                }),
-                ref: handleRef
-            }, childProps, {
-                children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(CollapseWrapper, {
-                    ownerState: (0, _extendsDefault.default)({}, ownerState, {
-                        state
-                    }),
-                    className: classes.wrapper,
-                    ref: wrapperRef,
-                    children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(CollapseWrapperInner, {
-                        ownerState: (0, _extendsDefault.default)({}, ownerState, {
-                            state
-                        }),
-                        className: classes.wrapperInner,
-                        children: children
-                    })
-                })
-            }))
-    }));
-});
-Collapse.propTypes = {
-    // ----------------------------- Warning --------------------------------
-    // | These PropTypes are generated from the TypeScript type definitions |
-    // |     To update them edit the d.ts file and run "yarn proptypes"     |
-    // ----------------------------------------------------------------------
-    /**
-   * Add a custom transition end trigger. Called with the transitioning DOM
-   * node and a done callback. Allows for more fine grained transition end
-   * logic. Note: Timeouts are still used as a fallback if provided.
-   */ addEndListener: (0, _propTypesDefault.default).func,
-    /**
-   * The content node to be collapsed.
-   */ children: (0, _propTypesDefault.default).node,
-    /**
-   * Override or extend the styles applied to the component.
-   */ classes: (0, _propTypesDefault.default).object,
-    /**
-   * @ignore
-   */ className: (0, _propTypesDefault.default).string,
-    /**
-   * The width (horizontal) or height (vertical) of the container when collapsed.
-   * @default '0px'
-   */ collapsedSize: (0, _propTypesDefault.default).oneOfType([
-        (0, _propTypesDefault.default).number,
-        (0, _propTypesDefault.default).string
-    ]),
-    /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */ component: (0, _utils.elementTypeAcceptingRef),
-    /**
-   * The transition timing function.
-   * You may specify a single easing or a object containing enter and exit values.
-   */ easing: (0, _propTypesDefault.default).oneOfType([
-        (0, _propTypesDefault.default).shape({
-            enter: (0, _propTypesDefault.default).string,
-            exit: (0, _propTypesDefault.default).string
-        }),
-        (0, _propTypesDefault.default).string
-    ]),
-    /**
-   * If `true`, the component will transition in.
-   */ in: (0, _propTypesDefault.default).bool,
-    /**
-   * @ignore
-   */ onEnter: (0, _propTypesDefault.default).func,
-    /**
-   * @ignore
-   */ onEntered: (0, _propTypesDefault.default).func,
-    /**
-   * @ignore
-   */ onEntering: (0, _propTypesDefault.default).func,
-    /**
-   * @ignore
-   */ onExit: (0, _propTypesDefault.default).func,
-    /**
-   * @ignore
-   */ onExited: (0, _propTypesDefault.default).func,
-    /**
-   * @ignore
-   */ onExiting: (0, _propTypesDefault.default).func,
-    /**
-   * The transition orientation.
-   * @default 'vertical'
-   */ orientation: (0, _propTypesDefault.default).oneOf([
-        "horizontal",
-        "vertical"
-    ]),
-    /**
-   * @ignore
-   */ style: (0, _propTypesDefault.default).object,
-    /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */ sx: (0, _propTypesDefault.default).oneOfType([
-        (0, _propTypesDefault.default).arrayOf((0, _propTypesDefault.default).oneOfType([
-            (0, _propTypesDefault.default).func,
-            (0, _propTypesDefault.default).object,
-            (0, _propTypesDefault.default).bool
-        ])),
-        (0, _propTypesDefault.default).func,
-        (0, _propTypesDefault.default).object
-    ]),
-    /**
-   * The duration for the transition, in milliseconds.
-   * You may specify a single timeout for all transitions, or individually with an object.
-   *
-   * Set to 'auto' to automatically calculate transition time based on height.
-   * @default duration.standard
-   */ timeout: (0, _propTypesDefault.default).oneOfType([
-        (0, _propTypesDefault.default).oneOf([
-            "auto"
-        ]),
-        (0, _propTypesDefault.default).number,
-        (0, _propTypesDefault.default).shape({
-            appear: (0, _propTypesDefault.default).number,
-            enter: (0, _propTypesDefault.default).number,
-            exit: (0, _propTypesDefault.default).number
-        })
-    ])
-};
-Collapse.muiSupportAuto = true;
-exports.default = Collapse;
-
-},{"@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"adHgr","@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","clsx":"83C22","prop-types":"7wKI2","react-transition-group":"fZSkB","@mui/utils":"cttLn","@mui/base":"656dE","../styles/styled":"32xTg","../styles/useThemeProps":"dewuS","../styles/createTransitions":"6b8o6","../transitions/utils":"bSIvX","../styles/useTheme":"5nWMX","../utils":"9bp9M","./collapseClasses":"kwDvU","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bSIvX":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "reflow", ()=>reflow);
-parcelHelpers.export(exports, "getTransitionProps", ()=>getTransitionProps);
-const reflow = (node)=>node.scrollTop;
-function getTransitionProps(props, options) {
-    var _style$transitionDura, _style$transitionTimi;
-    const { timeout , easing , style ={}  } = props;
-    return {
-        duration: (_style$transitionDura = style.transitionDuration) != null ? _style$transitionDura : typeof timeout === "number" ? timeout : timeout[options.mode] || 0,
-        easing: (_style$transitionTimi = style.transitionTimingFunction) != null ? _style$transitionTimi : typeof easing === "object" ? easing[options.mode] : easing,
-        delay: style.transitionDelay
-    };
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kwDvU":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getCollapseUtilityClass", ()=>getCollapseUtilityClass);
-var _base = require("@mui/base");
-function getCollapseUtilityClass(slot) {
-    return (0, _base.generateUtilityClass)("MuiCollapse", slot);
-}
-const collapseClasses = (0, _base.generateUtilityClasses)("MuiCollapse", [
-    "root",
-    "horizontal",
-    "vertical",
-    "entered",
-    "hidden",
-    "wrapper",
-    "wrapperInner"
-]);
-exports.default = collapseClasses;
-
-},{"@mui/base":"656dE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2z2cd":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _createSvgIcon = _interopRequireDefault(require("./utils/createSvgIcon"));
-var _jsxRuntime = require("react/jsx-runtime");
-var _default = (0, _createSvgIcon.default)(/*#__PURE__*/ (0, _jsxRuntime.jsx)("path", {
-    d: "M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-}), "Close");
-exports.default = _default;
-
-},{"@babel/runtime/helpers/interopRequireDefault":"7XM86","./utils/createSvgIcon":"lVV9C","react/jsx-runtime":"6AEwr"}],"km3Ru":[function(require,module,exports) {
+},{"@mui/utils":"cttLn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("react-refresh/runtime");
 function debounce(func, delay) {
@@ -52246,6 +51799,415 @@ const cardActionsClasses = (0, _base.generateUtilityClasses)("MuiCardActions", [
     "spacing"
 ]);
 exports.default = cardActionsClasses;
+
+},{"@mui/base":"656dE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lGzFX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>(0, _collapseDefault.default));
+parcelHelpers.export(exports, "collapseClasses", ()=>(0, _collapseClassesDefault.default));
+var _collapse = require("./Collapse");
+var _collapseDefault = parcelHelpers.interopDefault(_collapse);
+var _collapseClasses = require("./collapseClasses");
+var _collapseClassesDefault = parcelHelpers.interopDefault(_collapseClasses);
+parcelHelpers.exportAll(_collapseClasses, exports);
+
+},{"./Collapse":"6SQTK","./collapseClasses":"kwDvU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6SQTK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _objectWithoutPropertiesLoose = require("@babel/runtime/helpers/esm/objectWithoutPropertiesLoose");
+var _objectWithoutPropertiesLooseDefault = parcelHelpers.interopDefault(_objectWithoutPropertiesLoose);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _react = require("react");
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _reactTransitionGroup = require("react-transition-group");
+var _utils = require("@mui/utils");
+var _base = require("@mui/base");
+var _styled = require("../styles/styled");
+var _styledDefault = parcelHelpers.interopDefault(_styled);
+var _useThemeProps = require("../styles/useThemeProps");
+var _useThemePropsDefault = parcelHelpers.interopDefault(_useThemeProps);
+var _createTransitions = require("../styles/createTransitions");
+var _utils1 = require("../transitions/utils");
+var _useTheme = require("../styles/useTheme");
+var _useThemeDefault = parcelHelpers.interopDefault(_useTheme);
+var _utils2 = require("../utils");
+var _collapseClasses = require("./collapseClasses");
+var _jsxRuntime = require("react/jsx-runtime");
+const _excluded = [
+    "addEndListener",
+    "children",
+    "className",
+    "collapsedSize",
+    "component",
+    "easing",
+    "in",
+    "onEnter",
+    "onEntered",
+    "onEntering",
+    "onExit",
+    "onExited",
+    "onExiting",
+    "orientation",
+    "style",
+    "timeout",
+    "TransitionComponent"
+];
+const useUtilityClasses = (ownerState)=>{
+    const { orientation , classes  } = ownerState;
+    const slots = {
+        root: [
+            "root",
+            `${orientation}`
+        ],
+        entered: [
+            "entered"
+        ],
+        hidden: [
+            "hidden"
+        ],
+        wrapper: [
+            "wrapper",
+            `${orientation}`
+        ],
+        wrapperInner: [
+            "wrapperInner",
+            `${orientation}`
+        ]
+    };
+    return (0, _base.unstable_composeClasses)(slots, (0, _collapseClasses.getCollapseUtilityClass), classes);
+};
+const CollapseRoot = (0, _styledDefault.default)("div", {
+    name: "MuiCollapse",
+    slot: "Root",
+    overridesResolver: (props, styles)=>{
+        const { ownerState  } = props;
+        return [
+            styles.root,
+            styles[ownerState.orientation],
+            ownerState.state === "entered" && styles.entered,
+            ownerState.state === "exited" && !ownerState.in && ownerState.collapsedSize === "0px" && styles.hidden
+        ];
+    }
+})(({ theme , ownerState  })=>(0, _extendsDefault.default)({
+        height: 0,
+        overflow: "hidden",
+        transition: theme.transitions.create("height")
+    }, ownerState.orientation === "horizontal" && {
+        height: "auto",
+        width: 0,
+        transition: theme.transitions.create("width")
+    }, ownerState.state === "entered" && (0, _extendsDefault.default)({
+        height: "auto",
+        overflow: "visible"
+    }, ownerState.orientation === "horizontal" && {
+        width: "auto"
+    }), ownerState.state === "exited" && !ownerState.in && ownerState.collapsedSize === "0px" && {
+        visibility: "hidden"
+    }));
+const CollapseWrapper = (0, _styledDefault.default)("div", {
+    name: "MuiCollapse",
+    slot: "Wrapper",
+    overridesResolver: (props, styles)=>styles.wrapper
+})(({ ownerState  })=>(0, _extendsDefault.default)({
+        // Hack to get children with a negative margin to not falsify the height computation.
+        display: "flex",
+        width: "100%"
+    }, ownerState.orientation === "horizontal" && {
+        width: "auto",
+        height: "100%"
+    }));
+const CollapseWrapperInner = (0, _styledDefault.default)("div", {
+    name: "MuiCollapse",
+    slot: "WrapperInner",
+    overridesResolver: (props, styles)=>styles.wrapperInner
+})(({ ownerState  })=>(0, _extendsDefault.default)({
+        width: "100%"
+    }, ownerState.orientation === "horizontal" && {
+        width: "auto",
+        height: "100%"
+    }));
+/**
+ * The Collapse transition is used by the
+ * [Vertical Stepper](/material-ui/react-stepper/#vertical-stepper) StepContent component.
+ * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
+ */ const Collapse = /*#__PURE__*/ _react.forwardRef(function Collapse(inProps, ref) {
+    const props = (0, _useThemePropsDefault.default)({
+        props: inProps,
+        name: "MuiCollapse"
+    });
+    const { addEndListener , children , className , collapsedSize: collapsedSizeProp = "0px" , component , easing , in: inProp , onEnter , onEntered , onEntering , onExit , onExited , onExiting , orientation ="vertical" , style , timeout =(0, _createTransitions.duration).standard , // eslint-disable-next-line react/prop-types
+    TransitionComponent =(0, _reactTransitionGroup.Transition)  } = props, other = (0, _objectWithoutPropertiesLooseDefault.default)(props, _excluded);
+    const ownerState = (0, _extendsDefault.default)({}, props, {
+        orientation,
+        collapsedSize: collapsedSizeProp
+    });
+    const classes = useUtilityClasses(ownerState);
+    const theme = (0, _useThemeDefault.default)();
+    const timer = _react.useRef();
+    const wrapperRef = _react.useRef(null);
+    const autoTransitionDuration = _react.useRef();
+    const collapsedSize = typeof collapsedSizeProp === "number" ? `${collapsedSizeProp}px` : collapsedSizeProp;
+    const isHorizontal = orientation === "horizontal";
+    const size = isHorizontal ? "width" : "height";
+    _react.useEffect(()=>{
+        return ()=>{
+            clearTimeout(timer.current);
+        };
+    }, []);
+    const nodeRef = _react.useRef(null);
+    const handleRef = (0, _utils2.useForkRef)(ref, nodeRef);
+    const normalizedTransitionCallback = (callback)=>(maybeIsAppearing)=>{
+            if (callback) {
+                const node = nodeRef.current; // onEnterXxx and onExitXxx callbacks have a different arguments.length value.
+                if (maybeIsAppearing === undefined) callback(node);
+                else callback(node, maybeIsAppearing);
+            }
+        };
+    const getWrapperSize = ()=>wrapperRef.current ? wrapperRef.current[isHorizontal ? "clientWidth" : "clientHeight"] : 0;
+    const handleEnter = normalizedTransitionCallback((node, isAppearing)=>{
+        if (wrapperRef.current && isHorizontal) // Set absolute position to get the size of collapsed content
+        wrapperRef.current.style.position = "absolute";
+        node.style[size] = collapsedSize;
+        if (onEnter) onEnter(node, isAppearing);
+    });
+    const handleEntering = normalizedTransitionCallback((node, isAppearing)=>{
+        const wrapperSize = getWrapperSize();
+        if (wrapperRef.current && isHorizontal) // After the size is read reset the position back to default
+        wrapperRef.current.style.position = "";
+        const { duration: transitionDuration , easing: transitionTimingFunction  } = (0, _utils1.getTransitionProps)({
+            style,
+            timeout,
+            easing
+        }, {
+            mode: "enter"
+        });
+        if (timeout === "auto") {
+            const duration2 = theme.transitions.getAutoHeightDuration(wrapperSize);
+            node.style.transitionDuration = `${duration2}ms`;
+            autoTransitionDuration.current = duration2;
+        } else node.style.transitionDuration = typeof transitionDuration === "string" ? transitionDuration : `${transitionDuration}ms`;
+        node.style[size] = `${wrapperSize}px`;
+        node.style.transitionTimingFunction = transitionTimingFunction;
+        if (onEntering) onEntering(node, isAppearing);
+    });
+    const handleEntered = normalizedTransitionCallback((node, isAppearing)=>{
+        node.style[size] = "auto";
+        if (onEntered) onEntered(node, isAppearing);
+    });
+    const handleExit = normalizedTransitionCallback((node)=>{
+        node.style[size] = `${getWrapperSize()}px`;
+        if (onExit) onExit(node);
+    });
+    const handleExited = normalizedTransitionCallback(onExited);
+    const handleExiting = normalizedTransitionCallback((node)=>{
+        const wrapperSize = getWrapperSize();
+        const { duration: transitionDuration , easing: transitionTimingFunction  } = (0, _utils1.getTransitionProps)({
+            style,
+            timeout,
+            easing
+        }, {
+            mode: "exit"
+        });
+        if (timeout === "auto") {
+            // TODO: rename getAutoHeightDuration to something more generic (width support)
+            // Actually it just calculates animation duration based on size
+            const duration2 = theme.transitions.getAutoHeightDuration(wrapperSize);
+            node.style.transitionDuration = `${duration2}ms`;
+            autoTransitionDuration.current = duration2;
+        } else node.style.transitionDuration = typeof transitionDuration === "string" ? transitionDuration : `${transitionDuration}ms`;
+        node.style[size] = collapsedSize;
+        node.style.transitionTimingFunction = transitionTimingFunction;
+        if (onExiting) onExiting(node);
+    });
+    const handleAddEndListener = (next)=>{
+        if (timeout === "auto") timer.current = setTimeout(next, autoTransitionDuration.current || 0);
+        if (addEndListener) // Old call signature before `react-transition-group` implemented `nodeRef`
+        addEndListener(nodeRef.current, next);
+    };
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(TransitionComponent, (0, _extendsDefault.default)({
+        in: inProp,
+        onEnter: handleEnter,
+        onEntered: handleEntered,
+        onEntering: handleEntering,
+        onExit: handleExit,
+        onExited: handleExited,
+        onExiting: handleExiting,
+        addEndListener: handleAddEndListener,
+        nodeRef: nodeRef,
+        timeout: timeout === "auto" ? null : timeout
+    }, other, {
+        children: (state, childProps)=>/*#__PURE__*/ (0, _jsxRuntime.jsx)(CollapseRoot, (0, _extendsDefault.default)({
+                as: component,
+                className: (0, _clsxDefault.default)(classes.root, className, {
+                    "entered": classes.entered,
+                    "exited": !inProp && collapsedSize === "0px" && classes.hidden
+                }[state]),
+                style: (0, _extendsDefault.default)({
+                    [isHorizontal ? "minWidth" : "minHeight"]: collapsedSize
+                }, style),
+                ownerState: (0, _extendsDefault.default)({}, ownerState, {
+                    state
+                }),
+                ref: handleRef
+            }, childProps, {
+                children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(CollapseWrapper, {
+                    ownerState: (0, _extendsDefault.default)({}, ownerState, {
+                        state
+                    }),
+                    className: classes.wrapper,
+                    ref: wrapperRef,
+                    children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(CollapseWrapperInner, {
+                        ownerState: (0, _extendsDefault.default)({}, ownerState, {
+                            state
+                        }),
+                        className: classes.wrapperInner,
+                        children: children
+                    })
+                })
+            }))
+    }));
+});
+Collapse.propTypes = {
+    // ----------------------------- Warning --------------------------------
+    // | These PropTypes are generated from the TypeScript type definitions |
+    // |     To update them edit the d.ts file and run "yarn proptypes"     |
+    // ----------------------------------------------------------------------
+    /**
+   * Add a custom transition end trigger. Called with the transitioning DOM
+   * node and a done callback. Allows for more fine grained transition end
+   * logic. Note: Timeouts are still used as a fallback if provided.
+   */ addEndListener: (0, _propTypesDefault.default).func,
+    /**
+   * The content node to be collapsed.
+   */ children: (0, _propTypesDefault.default).node,
+    /**
+   * Override or extend the styles applied to the component.
+   */ classes: (0, _propTypesDefault.default).object,
+    /**
+   * @ignore
+   */ className: (0, _propTypesDefault.default).string,
+    /**
+   * The width (horizontal) or height (vertical) of the container when collapsed.
+   * @default '0px'
+   */ collapsedSize: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).number,
+        (0, _propTypesDefault.default).string
+    ]),
+    /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */ component: (0, _utils.elementTypeAcceptingRef),
+    /**
+   * The transition timing function.
+   * You may specify a single easing or a object containing enter and exit values.
+   */ easing: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).shape({
+            enter: (0, _propTypesDefault.default).string,
+            exit: (0, _propTypesDefault.default).string
+        }),
+        (0, _propTypesDefault.default).string
+    ]),
+    /**
+   * If `true`, the component will transition in.
+   */ in: (0, _propTypesDefault.default).bool,
+    /**
+   * @ignore
+   */ onEnter: (0, _propTypesDefault.default).func,
+    /**
+   * @ignore
+   */ onEntered: (0, _propTypesDefault.default).func,
+    /**
+   * @ignore
+   */ onEntering: (0, _propTypesDefault.default).func,
+    /**
+   * @ignore
+   */ onExit: (0, _propTypesDefault.default).func,
+    /**
+   * @ignore
+   */ onExited: (0, _propTypesDefault.default).func,
+    /**
+   * @ignore
+   */ onExiting: (0, _propTypesDefault.default).func,
+    /**
+   * The transition orientation.
+   * @default 'vertical'
+   */ orientation: (0, _propTypesDefault.default).oneOf([
+        "horizontal",
+        "vertical"
+    ]),
+    /**
+   * @ignore
+   */ style: (0, _propTypesDefault.default).object,
+    /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */ sx: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).arrayOf((0, _propTypesDefault.default).oneOfType([
+            (0, _propTypesDefault.default).func,
+            (0, _propTypesDefault.default).object,
+            (0, _propTypesDefault.default).bool
+        ])),
+        (0, _propTypesDefault.default).func,
+        (0, _propTypesDefault.default).object
+    ]),
+    /**
+   * The duration for the transition, in milliseconds.
+   * You may specify a single timeout for all transitions, or individually with an object.
+   *
+   * Set to 'auto' to automatically calculate transition time based on height.
+   * @default duration.standard
+   */ timeout: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).oneOf([
+            "auto"
+        ]),
+        (0, _propTypesDefault.default).number,
+        (0, _propTypesDefault.default).shape({
+            appear: (0, _propTypesDefault.default).number,
+            enter: (0, _propTypesDefault.default).number,
+            exit: (0, _propTypesDefault.default).number
+        })
+    ])
+};
+Collapse.muiSupportAuto = true;
+exports.default = Collapse;
+
+},{"@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"adHgr","@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","clsx":"83C22","prop-types":"7wKI2","react-transition-group":"fZSkB","@mui/utils":"cttLn","@mui/base":"656dE","../styles/styled":"32xTg","../styles/useThemeProps":"dewuS","../styles/createTransitions":"6b8o6","../transitions/utils":"bSIvX","../styles/useTheme":"5nWMX","../utils":"9bp9M","./collapseClasses":"kwDvU","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bSIvX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "reflow", ()=>reflow);
+parcelHelpers.export(exports, "getTransitionProps", ()=>getTransitionProps);
+const reflow = (node)=>node.scrollTop;
+function getTransitionProps(props, options) {
+    var _style$transitionDura, _style$transitionTimi;
+    const { timeout , easing , style ={}  } = props;
+    return {
+        duration: (_style$transitionDura = style.transitionDuration) != null ? _style$transitionDura : typeof timeout === "number" ? timeout : timeout[options.mode] || 0,
+        easing: (_style$transitionTimi = style.transitionTimingFunction) != null ? _style$transitionTimi : typeof easing === "object" ? easing[options.mode] : easing,
+        delay: style.transitionDelay
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kwDvU":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getCollapseUtilityClass", ()=>getCollapseUtilityClass);
+var _base = require("@mui/base");
+function getCollapseUtilityClass(slot) {
+    return (0, _base.generateUtilityClass)("MuiCollapse", slot);
+}
+const collapseClasses = (0, _base.generateUtilityClasses)("MuiCollapse", [
+    "root",
+    "horizontal",
+    "vertical",
+    "entered",
+    "hidden",
+    "wrapper",
+    "wrapperInner"
+]);
+exports.default = collapseClasses;
 
 },{"@mui/base":"656dE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hJMuL":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
