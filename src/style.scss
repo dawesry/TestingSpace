@@ -35,10 +35,16 @@
   &#bulma {
     height: 2.5rem;
     content: url("https://bulma.io/images/made-with-bulma--semiblack.png");
+  }
 
-    @media (prefers-color-scheme: dark) {
-      content: url("https://bulma.io/images/made-with-bulma--semiwhite.png");
-    };
+  &#tailwind {
+    height: 2rem;
+    content: url("./assets/img/tailwind.svg");
+  }
+
+  &#react {
+    height: 2.5rem;
+    content: url("./assets/img/react.svg");
   }
 }
 
