@@ -1,7 +1,5 @@
 /* CUSTOM COMPONENTS */
 
-@import 'bulma/bulma.sass';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,19 +30,14 @@
     height: 2rem;
   }
 
-  &#bulma {
-    height: 2.5rem;
-    content: url("https://bulma.io/images/made-with-bulma--semiblack.png");
-  }
-
   &#tailwind {
     height: 2rem;
-    content: url("./assets/img/tailwind.svg");
+    content: url("https://tailwindcss.com/_next/static/media/tailwindcss-logotype.ed60a6f85c663923c4d6ee9d85f359cd.svg");
   }
 
   &#react {
     height: 2.5rem;
-    content: url("./assets/img/react.svg");
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K");
   }
 }
 
