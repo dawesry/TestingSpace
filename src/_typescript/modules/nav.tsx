@@ -4,8 +4,8 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'TestingSpace', href: 'index.html', current: true },
-  { name: 'Projects', href: 'projects.html', current: false },
+  { name: 'Home', href: 'index',},
+  { name: 'Projects', href: 'projects',},
 ]
 
 function classNames(...classes) {
@@ -34,7 +34,7 @@ export default function NavBar() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg"
+                    src="https://tailwindcss.com/_next/static/media/tailwindcss-logotype-white.e0b2bd6155fa0bed8e24ff6b28f4a911.svg"
                     alt="Workflow"
                   />
                   <img
@@ -53,7 +53,7 @@ export default function NavBar() {
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
-                        aria-current={item.current ? 'page' : item.name}
+                        aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
                       </a>

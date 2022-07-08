@@ -2,10 +2,9 @@ import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 import { StyledEngineProvider } from '@mui/material/styles';
 
-import BasicAlerts from './_typescript/alert';
-import NavBar from './_typescript/nav';
-import NavBarProj from './_typescript/projects-nav';
-import CTA from './_typescript/cta';
+import BasicAlerts from './modules/alert';
+import NavBar from './modules/nav';
+import CTA from './modules/cta';
 
 ReactDOM.createRoot(document.querySelector("#devalert")).render(
   <React.StrictMode>
