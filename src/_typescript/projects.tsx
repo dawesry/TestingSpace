@@ -4,7 +4,7 @@ import { StyledEngineProvider } from '@mui/material/styles';
 
 import BasicAlerts from './modules/alert';
 import NavBar from './modules/nav';
-import CTA from './modules/cta';
+import DropDown from './modules/dropdown';
 
 ReactDOM.createRoot(document.querySelector("#devalert")).render(
   <React.StrictMode>
@@ -22,10 +22,10 @@ ReactDOM.createRoot(document.querySelector("#navbar")).render(
   </React.StrictMode>
 );
 
-ReactDOM.createRoot(document.querySelector("#cta")).render(
+ReactDOM.createRoot(document.querySelector("#dropdown")).render(
   <React.StrictMode>
     <StyledEngineProvider injectFirst>
-      <CTA />
+      <DropDown />
     </StyledEngineProvider>
   </React.StrictMode>
 );
